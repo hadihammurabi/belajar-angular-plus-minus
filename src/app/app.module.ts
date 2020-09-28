@@ -1,7 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
-import { AppRoutingModule } from './app-routing.module';
+import { AppRoutingModule } from './app.routing.module';
 import { AppComponent } from './app.component';
 import { AppMaterialModule } from './app.material.module';
 
@@ -11,6 +11,7 @@ import { AppMaterialModule } from './app.material.module';
   ],
   imports: [
     BrowserModule,
+    AppRoutingModule,
     AppMaterialModule,
   ],
   providers: [],
