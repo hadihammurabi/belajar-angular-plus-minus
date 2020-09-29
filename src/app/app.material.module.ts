@@ -5,20 +5,20 @@ import { MatCardModule } from  '@angular/material/card';
 import { MatGridListModule } from  '@angular/material/grid-list';
 import { MatButtonModule } from  '@angular/material/button';
 
+const MaterialModules = [
+  MatIconModule,
+  MatToolbarModule,
+  MatCardModule,
+  MatGridListModule,
+  MatButtonModule,
+];
+
 @NgModule({
   imports: [
-    MatIconModule,
-    MatToolbarModule,
-    MatCardModule,
-    MatGridListModule,
-    MatButtonModule,
+    ...MaterialModules,
   ],
   exports: [
-    MatIconModule,
-    MatToolbarModule,
-    MatCardModule,
-    MatGridListModule,
-    MatButtonModule,
+    ...MaterialModules,
   ],
 })
 export class AppMaterialModule { }
