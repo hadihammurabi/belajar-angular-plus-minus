@@ -1,0 +1,23 @@
+<app-topnav title="Home"></app-topnav>
+
+<mat-card class="card-calculator">
+  <mat-card-title>Calculator</mat-card-title>
+  <mat-card-content style="text-align: center;">
+    {{count}}
+  </mat-card-content>
+  <mat-card-actions>
+    <button mat-raised-button (click)="increment()">
+      <mat-icon>add</mat-icon>
+    </button>
+    <button mat-raised-button (click)="decrement()">
+      <mat-icon>remove</mat-icon>
+    </button>
+  </mat-card-actions>
+</mat-card>
+
+<br/>
+
+
+<a routerLink="/">
+  Go to about
+</a>
